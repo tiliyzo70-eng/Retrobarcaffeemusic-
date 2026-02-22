@@ -1,1 +1,184 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Retro Coffee Bar Music</title>
+  <meta name="description" content="Dark trip-hop & lounge. Buy tracks and download instantly." />
+  <style>
+    :root{
+      --bg:#000;
+      --card:#060606;
+      --stroke:rgba(255,255,255,.10);
+      --ink:#fff;
+      --muted:rgba(255,255,255,.72);
+    }
+    *{box-sizing:border-box}
+    body{
+      margin:0;
+      font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+      color:var(--ink);
+      background:var(--bg);
+    }
+    header{
+      padding:56px 18px 24px;
+      text-align:center;
+      border-bottom:1px solid rgba(255,255,255,.08);
+    }
+    h1{
+      margin:0;
+      letter-spacing:6px;
+      font-weight:800;
+      font-size:clamp(28px, 4vw, 44px);
+      text-transform:uppercase;
+    }
+    .sub{
+      max-width:860px;
+      margin:12px auto 0;
+      color:var(--muted);
+      line-height:1.6;
+      font-size:clamp(14px, 2.2vw, 16px);
+    }
+    .wrap{max-width:1080px;margin:0 auto;padding:22px 18px 70px;}
+    .bar{display:flex;gap:10px;justify-content:center;flex-wrap:wrap;margin:18px 0 6px;}
+    a.btn,button.btn{
+      text-decoration:none;
+      color:var(--ink);
+      background:transparent;
+      border:1px solid rgba(255,255,255,.18);
+      padding:10px 14px;
+      border-radius:999px;
+      font-weight:700;
+      cursor:pointer;
+    }
+    a.btn:hover,button.btn:hover{border-color:rgba(255,255,255,.35)}
+    .btn.primary{
+      background:#fff;
+      color:#000;
+      border-color:transparent;
+      font-weight:900;
+    }
+    .btn.primary:hover{filter:brightness(0.95)}
+    .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(290px,1fr));gap:14px;margin-top:22px;}
+    .card{
+      background:var(--card);
+      border:1px solid var(--stroke);
+      border-radius:16px;
+      padding:16px;
+      box-shadow:0 18px 55px rgba(0,0,0,.65);
+    }
+    .top{display:flex;justify-content:space-between;gap:12px;align-items:flex-start}
+    .track{margin:0;font-size:17px;letter-spacing:.2px}
+    .price{
+      color:#fff;
+      font-weight:900;
+      border:1px solid rgba(255,255,255,.28);
+      padding:4px 10px;
+      border-radius:999px;
+      font-size:12px;
+      white-space:nowrap;
+    }
+    .meta{margin:8px 0 12px;color:var(--muted);font-size:13.5px;line-height:1.5}
+    audio{width:100%;margin:8px 0 12px}
+    .actions{display:flex;gap:10px;flex-wrap:wrap}
+    .hr{height:1px;background:rgba(255,255,255,.08);margin:22px auto;max-width:980px}
+    footer{
+      text-align:center;color:var(--muted);
+      font-size:13px; line-height:1.6;
+      padding-top:6px;
+    }
+    .note{
+      max-width:900px;margin:0 auto;
+      padding:14px 14px;
+      border:1px solid rgba(255,255,255,.10);
+      border-radius:14px;
+      background:#020202;
+    }
+    .tiny{font-size:12.5px;opacity:.92}
+    code{background:rgba(255,255,255,.08); padding:2px 6px; border-radius:8px}
+  </style>
+</head>
+<body>
+  <header>
+    <h1>RETRO COFFEE BAR MUSIC</h1>
+    <div class="sub">Trip-hop • downtempo • lounge. Buy a track and download instantly.</div>
 
+    <div class="bar">
+      <a class="btn" href="#tracks">Tracks</a>
+      <a class="btn" href="https://instagram.com/YOUR_HANDLE" target="_blank" rel="noopener">Instagram</a>
+      <a class="btn" href="mailto:YOUR_EMAIL">Contact</a>
+      <button class="btn" id="bgBtn" type="button">Play background</button>
+    </div>
+  </header>
+
+  <main class="wrap" id="tracks">
+    <div class="grid">
+
+      <section class="card">
+        <div class="top">
+          <h2 class="track">1) Midnight Espresso</h2>
+          <div class="price">€5</div>
+        </div>
+        <div class="meta">Preview (30–60s).</div>
+        <audio controls preload="none" src="PREVIEW_MP3_1_URL"></audio>
+        <div class="actions">
+          <a class="btn primary" href="BUY_LINK_1" target="_blank" rel="noopener">Buy & Download</a>
+          <a class="btn" href="STREAM_LINK_1" target="_blank" rel="noopener">Listen</a>
+        </div>
+      </section>
+
+      <section class="card">
+        <div class="top">
+          <h2 class="track">2) Purple Smoke</h2>
+          <div class="price">€5</div>
+        </div>
+        <div class="meta">Preview (30–60s).</div>
+        <audio controls preload="none" src="PREVIEW_MP3_2_URL"></audio>
+        <div class="actions">
+          <a class="btn primary" href="BUY_LINK_2" target="_blank" rel="noopener">Buy & Download</a>
+          <a class="btn" href="STREAM_LINK_2" target="_blank" rel="noopener">Listen</a>
+        </div>
+      </section>
+
+      <section class="card">
+        <div class="top">
+          <h2 class="track">3) Vinyl Memories</h2>
+          <div class="price">€5</div>
+        </div>
+        <div class="meta">Preview (30–60s).</div>
+        <audio controls preload="none" src="PREVIEW_MP3_3_URL"></audio>
+        <div class="actions">
+          <a class="btn primary" href="BUY_LINK_3" target="_blank" rel="noopener">Buy & Download</a>
+          <a class="btn" href="STREAM_LINK_3" target="_blank" rel="noopener">Listen</a>
+        </div>
+      </section>
+
+    </div>
+
+    <div class="hr"></div>
+
+    <div class="note">
+      <b>How it works:</b> click <b>Buy & Download</b> (Payhip/Gumroad), pay with card/PayPal, receive the MP3 instantly.
+      <div class="tiny">Replace: <code>PREVIEW_MP3_*_URL</code>, <code>BUY_LINK_*</code>, <code>STREAM_LINK_*</code>, <code>BACKGROUND_MIX_URL</code>, <code>YOUR_HANDLE</code>, <code>YOUR_EMAIL</code>.</div>
+    </div>
+
+    <footer>© <span id="y"></span> Retro Coffee Bar Music</footer>
+  </main>
+
+  <audio id="bg" loop preload="none" src="BACKGROUND_MIX_URL"></audio>
+
+  <script>
+    document.getElementById('y').textContent = new Date().getFullYear();
+    const bg = document.getElementById('bg');
+    const btn = document.getElementById('bgBtn');
+    btn.addEventListener('click', async () => {
+      try {
+        if (bg.paused) { await bg.play(); btn.textContent = "Pause background"; }
+        else { bg.pause(); btn.textContent = "Play background"; }
+      } catch (e) {
+        alert("Autoplay is blocked. Tap again or check the audio link.");
+      }
+    });
+  </script>
+</body>
+</html>
